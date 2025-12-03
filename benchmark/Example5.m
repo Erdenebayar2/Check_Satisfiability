@@ -1,0 +1,9 @@
+% Auto-generated polynomial file
+
+x = sdpvar(1, 5);
+ex_qtf = [1, 2, 3, 4];
+un_qtf = [5];
+ranges = [1, 1 - x(5), 1 + x(5)];
+xdeg = 0;
+logical_formula = {{-3, 2}, {-5, 4, -3}};
+
