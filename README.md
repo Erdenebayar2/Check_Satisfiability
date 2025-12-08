@@ -11,8 +11,8 @@ This repository contains two directories, that contain both implementation in [M
 2. Download YALMIP from https://yalmip.github.io/ and add it to your MATLAB path.
 3. Install the MOSEK Optimization Toolbox for MATLAB by following the instruction at:
 
-    https://docs.mosek.com/10.0/toolbox/install-interface.html
-5. Clone this repository and add it to your MATLAB path.
+   https://docs.mosek.com/10.0/toolbox/install-interface.html
+4. Clone this repository and add it to your MATLAB path.
 
 
 The directory **"benchmarks"** contains the source files used for the experiments reported in the above submission. The directory **"software"** contains the implementation of the algorithm. In this directory, you will find the source code. You can use the folllowing command on Matlab to run the algorithm on each benchmark:
@@ -24,11 +24,12 @@ check_satisfiability('<benchmark-name>',<template-degree>)
 If the algorithm outputs 'Satisfiable', then: 
 
 - The satisfiability of the input formula is proven, and
-- The algorithm also returns concrete values for the valid polynomial Skolem templates.
+- The algorithm also returns concrete values for the valid polynomial Skolem templates of the specified degree.
 
 To execute a batch of benchmarks with negations indexed from n to m, run:
 
 ```
-run_all(<n>,<m>)
+run_all(<n>,<m>, <template_degree>)
 ```
+
 This function generates an Excel file containing the execution time and success status for each benchmark.
