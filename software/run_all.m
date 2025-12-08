@@ -8,9 +8,6 @@ function run_all_to_excel(n,m,tdeg)
     proven = [];
     results = {}; % Cell array to store results
     header = {'Benchmark', 'TimeSeconds', 'Satisfiable'}; % Excel headers
-    %tdeg =0;
-    %tdeg =1;
-    %tdeg =2;
     % Run positive benchmarks
     for ibench = 1:length(benchmark)
         disp(['Running ', benchmark{ibench}]);
