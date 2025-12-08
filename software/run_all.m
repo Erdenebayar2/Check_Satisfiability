@@ -8,12 +8,14 @@ function run_all_to_excel(n,m)
     proven = [];
     results = {}; % Cell array to store results
     header = {'Benchmark', 'TimeSeconds', 'Satisfiable'}; % Excel headers
-
+    tdeg =0;
+    %tdeg =1;
+    %tdeg =2;
     % Run positive benchmarks
     for ibench = 1:length(benchmark)
         disp(['Running ', benchmark{ibench}]);
         tStart = tic;
-        sat_ex = check_satisfiability(benchmark{ibench}, 0);
+        sat_ex = check_satisfiability(benchmark{ibench}, tdeg);
         elapsedTime = toc(tStart);
         
         numberpr = numberpr + sat_ex;
@@ -32,7 +34,7 @@ function run_all_to_excel(n,m)
         idx = proven(ibench_neg);
         disp(['Running ', benchmark_neg{idx}]);
         tStart = tic;
-        sat_ex = check_satisfiability(benchmark_neg{idx}, 0);
+        sat_ex = check_satisfiability(benchmark_neg{idx}, tdeg);
         elapsedTime = toc(tStart);
 
         numberpr = numberpr + sat_ex;
@@ -58,4 +60,3 @@ function run_all_to_excel(n,m)
     writetable(results_table, excelFileName);
     disp(['Results written to ', excelFileName]);
 end
-
