@@ -1,4 +1,4 @@
-function run_all_to_excel(n,m)
+function run_all_to_excel(n,m,tdeg)
     % Prepare benchmark names
     benchmark = arrayfun(@(k) sprintf('Example%d', k), n:m, 'UniformOutput', false);
     benchmark_neg = arrayfun(@(k) sprintf('Example%dneg', k), n:m, 'UniformOutput', false);
@@ -8,7 +8,7 @@ function run_all_to_excel(n,m)
     proven = [];
     results = {}; % Cell array to store results
     header = {'Benchmark', 'TimeSeconds', 'Satisfiable'}; % Excel headers
-    tdeg =0;
+    %tdeg =0;
     %tdeg =1;
     %tdeg =2;
     % Run positive benchmarks
