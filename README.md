@@ -10,8 +10,8 @@ This repository contains two directories, that contain both implementation in [M
 1. Install MATLAB.
 2. Download YALMIP from https://yalmip.github.io/ and add it to your MATLAB path.
 3. Install the MOSEK Optimization Toolbox for MATLAB by following the instruction at:
-4. 
-   https://docs.mosek.com/10.0/toolbox/install-interface.html
+
+    https://docs.mosek.com/10.0/toolbox/install-interface.html
 5. Clone this repository and add it to your MATLAB path.
 
 
