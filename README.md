@@ -4,7 +4,7 @@
 
 This repository contains two directories, that contain both implementation in [Matlab](https://mathworks.com/) of the algorithm (aka Algorithm 1) described in the FM'26 submission:
 
-* **Satisfiability of Quantified Real Arithmetic via Skolem Templates and Semidefinite Programming** <br>*E. Bayarmagnai, F. Mohammadi, S.Seemann,*
+* **Satisfiability of Quantified Real Arithmetic via Skolem Templates and Semidefinite Programming** <br>*E. Bayarmagnai, F. Mohammadi, S.Seemann*
 
 ## Setup:
 1. Install MATLAB.
