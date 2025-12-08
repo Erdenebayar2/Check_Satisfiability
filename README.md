@@ -10,8 +10,9 @@ This repository contains two directories, that contain both implementation in [M
 1. Install MATLAB.
 2. Download YALMIP from https://yalmip.github.io/ and add it to your MATLAB path.
 3. Install the MOSEK Optimization Toolbox for MATLAB by following the instruction at:
+4. 
    https://docs.mosek.com/10.0/toolbox/install-interface.html
-4. Clone this repository and add it to your MATLAB path.
+5. Clone this repository and add it to your MATLAB path.
 
 
 The directory **"benchmarks"** contains the source files used for the experiments reported in the above submission. The directory **"software"** contains the implementation of the algorithm. In this directory, you will find the source code. You can use the folllowing command on Matlab to run the algorithm on each benchmark:
