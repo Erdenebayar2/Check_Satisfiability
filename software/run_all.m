@@ -48,8 +48,6 @@ function run_all_to_excel(n,m,tdeg)
     elapsedTimeTotal = sum(cell2mat(results(:,2)));
     fprintf('Total solved: %d\n', numberpr);
     fprintf('Average time per benchmark: %.4f seconds\n', elapsedTimeTotal/length(benchmark));
-    disp('Proven positive:'); disp(proven);
-    disp('Proven negative:'); disp(proven_neg);
 
     % Write results to Excel
     excelFileName = 'benchmark_results.xlsx';
