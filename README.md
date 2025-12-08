@@ -1,3 +1,6 @@
+# Satisfiability of Quantified Real Arithmetic formula
+
+*Prototype implementation of an new algorithm for checking the satisfiability of quantified real arithmetic formula over compact basic semi-algebraic domains*
 This repository contains two directories, that contain both implementation in [Matlab](https://mathworks.com/) of the algorithm (aka Algorithm 1) described in the FM'26 submission:
 
 * **Satisfiability of Quantified Real Arithmetic via Skolem Templates and Semidefinite Programming** <br>*E. Bayarmagnai, S.Seemann, F. Mohammadi*
