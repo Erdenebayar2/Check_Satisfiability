@@ -32,4 +32,4 @@ To execute a batch of benchmarks with negations indexed from n to m, run:
 run_all(<n>,<m>, <template_degree>)
 ```
 
-This function generates an Excel file containing the execution time and success status for each benchmark.
+This function generates an excel file containing the execution time and success status for each benchmark.
